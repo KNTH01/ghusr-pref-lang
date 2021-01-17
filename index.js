@@ -56,7 +56,9 @@ async function main() {
   const result = computeData(data)
 
   console.log(`Language repartition (in Bytes) for ${username}`)
-  console.log(result)
+  Object.keys(result).map((language) => {
+    console.log(`* ${result[language]}: ${language}`)
+  })
 }
 
 main().catch((error) => console.error(error))
