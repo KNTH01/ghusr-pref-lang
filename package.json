@@ -1,7 +1,7 @@
 {
   "name": "ghusr-pref-lang",
   "version": "1.0.0",
-  "description": "Fetch the user prefered langages from his public repositories on GitHub",
+  "description": "Fetch the user prefered languages from his public repositories on GitHub",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
