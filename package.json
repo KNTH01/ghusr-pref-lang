@@ -4,6 +4,7 @@
   "description": "Fetch the user prefered languages from his public repositories on GitHub",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Kevin Nguyen",

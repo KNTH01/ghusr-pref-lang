@@ -27,7 +27,12 @@ async function main() {
     },
   })
 
-  const username = 'KevinNTH'
+  const username = process.argv[2] && process.argv[2].trim()
+
+  if (!username) {
+    throw new Error('Add GitHub username as argument: `npm start {username}`')
+  }
+
   const query = gql`
     query getLanguagesRepartition($username: String!) {
       repositoryOwner(login: $username) {
